@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meus Jogos</title>
+    <title>Jogos com PICO-8</title>
     <style>
       * {
         box-sizing: border-box;
@@ -24,8 +24,15 @@
 
       h1 {
         margin-top: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         font-size: 2rem;
+      }
+
+      .subtitle {
+        max-width: 600px;
+        margin-bottom: 40px;
+        color: #d9d9db;
+        font-size: 1rem;
       }
 
       .container {
@@ -35,22 +42,6 @@
         flex-direction: column;
         gap: 20px;
         align-items: center;
-      }
-
-      a:not(.play-btn) {
-        text-decoration: none;
-        color: rgb(217, 217, 219);
-        border: #7a7a7a 2px solid;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: 0.3s;
-        display: block;
-        width: 100%;
-        max-width: 200px;
-      }
-
-      a:not(.play-btn):hover {
-        background-color: #3a3a3a;
       }
 
       .play-btn {
@@ -71,6 +62,7 @@
         width: 100%;
         max-width: 450px;
         flex-wrap: wrap;
+        text-align: center;
       }
 
       .play-btn:hover {
@@ -80,7 +72,6 @@
 
       .play-btn span:first-child {
         white-space: normal;
-        text-align: center;
       }
 
       .play-btn .instructions {
@@ -92,10 +83,11 @@
         font-weight: normal;
         white-space: nowrap;
         overflow: hidden;
+        color: #eafff1;
       }
 
       .play-btn:hover .instructions {
-        max-width: 200px;
+        max-width: 260px;
         opacity: 1;
         margin-left: 10px;
       }
@@ -103,6 +95,10 @@
       @media (max-width: 600px) {
         h1 {
           font-size: 1.5rem;
+        }
+
+        .subtitle {
+          font-size: 0.95rem;
         }
 
         .play-btn {
@@ -122,17 +118,23 @@
     </style>
   </head>
   <body>
-    <h1>Meus Jogos</h1>
+    <h1>Jogos Desenvolvidos com PICO-8</h1>
+    <div class="subtitle">
+      Pequenos jogos criados com foco em mecânicas simples e diferentes formas
+      de controle.
+    </div>
 
     <div class="container">
       <a href="./fmobile_html/index.html" class="play-btn">
-        <span>Joguin de fazenda Versão Mobile/controle</span>
-        <span class="instructions">PLANTATIONNNN!!</span>
+        <span>Jogo da Fazenda — Mobile / Gamepad</span>
+        <span class="instructions"> Use setas direcionais e botões X / Z </span>
       </a>
 
       <a href="./fpc_html/index.html" class="play-btn">
-        <span>Joguin de fazenda Versão PC</span>
-        <span class="instructions">PLANTATIONNNN!!</span>
+        <span>Jogo da Fazenda — PC</span>
+        <span class="instructions">
+          Controles baseados no movimento do mouse
+        </span>
       </a>
     </div>
   </body>
