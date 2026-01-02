@@ -9,3 +9,6 @@ Este junta pequenos jogos que desenvolvi utilizando o **PICO-8**, focados em mec
 
 * **Jogo da Fazenda — Versão Mobile / Gamepad**
   Adaptado para dispositivos móveis e controle via gamepad, utilizando as setas direcionais e botões específicos (como **X** e **Z**).
+
+* **Jogo de Plataforma — Versão Facil**
+  Troque de cor para passar pelo parkour
