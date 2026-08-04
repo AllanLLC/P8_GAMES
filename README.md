@@ -1,6 +1,6 @@
 # Jogos Desenvolvidos com PICO-8
 
-Este junta pequenos jogos que desenvolvi utilizando o **PICO-8**, focados em mecânicas simples e jogos curtos.
+Este Repo junta pequenos jogos que desenvolvi utilizando o **PICO-8**, focados em mecânicas simples e jogos curtos.
 
 ## Lista de Jogos
 
